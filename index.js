@@ -14,7 +14,7 @@ const validateForm = function(){
         window.location.href = "home.html";
 
     }else {
-        alert("Ja vag chor");
+        alert("Invalid number or Password");
     }
 
 }
