@@ -16,7 +16,7 @@ const addMoney = function(){
         currentMoney.innerText = availableMoney + newAddAmount;
 
     }else {
-        alert("Invalid Pin!");
+        alert("Failed to add money! Please try again");
     }
     pinNumber.value = "";
     addAmount.value = "";
