@@ -32,13 +32,13 @@
                 <!-- user action button -->
                  <h3 class="text-2xl font-bold pb-2">Welcome to Payooo!</h3>
                  <div class="flex justify-between gap-5 mb-3">
-                    <button class="btn btn-lg bg-green-400 text-white">Add Money</button>
-                    <button class="btn btn-lg bg-green-400 text-white">Cash Out</button>
+                    <button id="add-money-option" class="btn btn-lg bg-green-400 text-white">Add Money</button>
+                    <button id="cash-out-option" class="btn btn-lg bg-green-400 text-white">Cash Out</button>
                  </div>
 
                  <div class="divider"></div>
                  <!-- Add Money Form start-->
-                 <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="add-money-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                      <form class="card-body">
                          <div class="form-control">
                         <label class="label">
@@ -60,11 +60,11 @@
                  <!-- Add Money Form ends-->
 
                   <!-- cash out start -->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="cash-out-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text text-lg font-semibold">Amount To Add</span>
+                          <span class="label-text text-lg font-semibold">Amount To Withdraw</span>
                         </label>
                         <input id="inp-cash-out" type="text" placeholder="Add Amount" class="input input-bordered" required />
                       </div>
@@ -87,5 +87,6 @@
 
     <script src="home.js"></script>
     <script src="cash-out.js"></script>
+    <script src="features.js"></script>
 </body>
 </html>
